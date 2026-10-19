@@ -1,6 +1,6 @@
 [package]
 name = "semver"
-version = "0.1.0"
+version = "1.0.0"
 description = "Semantic Versioning 2.0.0: parse, compare and order versions, and match them against ranges"
 license = "Apache-2.0"
 repository = "https://github.com/pep-lang/pepper-semver"
