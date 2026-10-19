@@ -103,6 +103,15 @@ runs the `[Test]` functions in `tests/` with `pepper test`: versions
 for the spec's suggested regular expression and each of the spec's
 precedence rules, and ranges (`range_test.pep`).
 
+## Releasing
+
+CI (`.github/workflows/ci.yml`) runs the tests on Linux, macOS and
+Windows for every push to `main` and every pull request. To release, set
+`version` in `pep.toml`, merge, then push the matching tag
+(`git tag v1.0.0 && git push origin v1.0.0`): CI tests the tag and
+publishes a GitHub release for it. `pepper package add` and `pepper
+package update` find versions by their tags.
+
 ## License
 
 Apache-2.0; see [LICENSE](LICENSE).
