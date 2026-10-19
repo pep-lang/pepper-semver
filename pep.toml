@@ -2,5 +2,5 @@
 name = "semver"
 version = "0.1.0"
 description = "Semantic Versioning 2.0.0: parse, compare and order versions, and match them against ranges"
-license = "MIT"
+license = "Apache-2.0"
 repository = "https://github.com/justinboswell/pepper-semver"
