@@ -1,10 +1,9 @@
 # pepper-semver
 
 [Semantic Versioning 2.0.0](https://semver.org) for
-[Pepper](https://github.com/justinboswell/pepper) (issue
-justinboswell/pepper#986): parse versions, order them by the spec's
-precedence, and match them against ranges such as `^1.2`, `~1.2` and
-`>=1.0, <2`. It starts from the version code of `pep-package`, so other
+[Pepper](https://github.com/justinboswell/pepper): parse versions, order them
+by the spec's precedence, and match them against ranges such as `^1.2`,
+`~1.2` and `>=1.0, <2`. It starts from the version code of `pep-package`, so other
 tools can share one implementation.
 
 One module, **`semver`**:
@@ -70,9 +69,8 @@ main(): int {
   number is an error (`the major version '...' is too large`). Prerelease
   numbers have no limit.
 - Ranges are Cargo's: no npm hyphen ranges (`1.2 - 1.4`) or `||`.
-- `Version` has `compare` and the comparison operators but does not yet
-  declare the runtime's `Comparable` trait, which is newer than the
-  0.9.4 toolchain this package builds with.
+- `Version` has `compare` and the comparison operators but does not
+  declare the runtime's `Comparable` trait yet.
 
 ## Using it
 
@@ -104,3 +102,7 @@ runs the `[Test]` functions in `tests/` with `pepper test`: versions
 (`version_test.pep`), with the valid and invalid versions of the test set
 for the spec's suggested regular expression and each of the spec's
 precedence rules, and ranges (`range_test.pep`).
+
+## License
+
+Apache-2.0; see [LICENSE](LICENSE).
