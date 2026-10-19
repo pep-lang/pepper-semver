@@ -1,7 +1,7 @@
 # pepper-semver
 
 [Semantic Versioning 2.0.0](https://semver.org) for
-[Pepper](https://github.com/justinboswell/pepper): parse versions, order them
+[Pepper](https://github.com/pep-lang/pepper): parse versions, order them
 by the spec's precedence, and match them against ranges such as `^1.2`,
 `~1.2` and `>=1.0, <2`. It starts from the version code of `pep-package`, so other
 tools can share one implementation.
@@ -79,14 +79,14 @@ This repository is a package: `pep.toml` marks its root, and its root
 `semver`:
 
 ```sh
-pepper package add justinboswell/pepper-semver --name semver
+pepper package add pep-lang/pepper-semver --name semver
 ```
 
 which writes
 
 ```toml
 [dependencies]
-semver = { github = "justinboswell/pepper-semver" }
+semver = { github = "pep-lang/pepper-semver" }
 ```
 
 Without a project, put a folder named `semver` that holds (or links to)
